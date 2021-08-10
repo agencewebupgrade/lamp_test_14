@@ -15,6 +15,7 @@ class BlogFixtures extends Fixture
         for ($count = 0; $count < 20; $count++) {
             $blog = new Blog();
             $blog->setName("Article " . $count);
+            $blog->setDateAdd(new \DateTime());
             $blog->setImage("image" . $count . ".png");
             $manager->persist($blog);
         }
