@@ -6,7 +6,7 @@ use Doctrine\Bundle\FixturesBundle\Fixture;
 use Doctrine\Persistence\ObjectManager;
 
 // ADED BY ME
-use App\Entiry\Blog;
+use App\Entity\Blog;
 
 class BlogFixtures extends Fixture
 {
