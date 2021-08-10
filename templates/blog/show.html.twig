@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello BlogController!{% endblock %}
+
+{% block body %}
+
+<ul>
+    {% for blog in blogs %}
+        <li>
+            <h2>{{ blog.name }}</h2>
+            <p><img src="../assets/img/{{ blog.image }} " width="300px"></p>
+            <p>Ajouté le : <i>{{ blog.dateadd|format_datetime('full', 'none', locale='fr') }}<i></p>
+            <br/>
+        </li>
+    {% endfor %}
+</ul>
+
+{% endblock %}
